@@ -10,9 +10,8 @@ ZEUS_API = "http://api.ciscozeus.io"
 token = "68c5e168"
 z = ZeusClient(token, ZEUS_API)
 
-# log_name = raw_input("please input the log_name:")
-log_name = "stackoverflow"
-sample_file = "StackOverflow/StackOverflow_20140116-20140122.csv"
+log_name = raw_input("please input the log_name:")
+log_file_name = raw_input("please input the log file name:")
 
 csvfile = open("data/"+sample_file)
 reader = csv.reader(csvfile)
